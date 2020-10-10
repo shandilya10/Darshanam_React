@@ -1,0 +1,70 @@
+body {
+  background-color: #FFCC00;
+  margin: 0;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #111;
+  padding: 0;
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: #FFF;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+.navbar-nav .active {
+  background-color: #0099FF;
+}
+.rec h1{text-align: center;}
+.search_button{
+  height: 38px;
+text-align: left;
+background-color: #fc0;
+color: #000;
+border: 0;
+cursor: pointer;
+}
+.search_bar{
+  padding: 4px 0px;
+  height: 28px;
+}
+.news{
+  width: 48%;
+float: left;
+padding-right: 23px;
+margin-top: 52px;
+min-height: 420px;
+}
+.inner_image img{
+  width: 420px;
+  height: auto;
+}
+.search_form{
+  text-align: center;
+  margin-bottom: 25px;
+}
+.news h2{
+  margin-bottom: 15px;
+}
+.right{float: right;}
+.search_input{display:none;}
+.search-open.search_input{display: block;}
