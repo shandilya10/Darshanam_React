@@ -3,7 +3,7 @@ import Singlenews from "./singlenews";
 function News() {
     const [recipes, setRecipes] = useState([]);
     const [search, setSearch] = useState("");
-    const [query, setQuery] = useState('apple');
+    const [query, setQuery] = useState('ibm');
 
     useEffect( () => {
         getRecipes();
@@ -11,7 +11,8 @@ function News() {
 
     const getRecipes = async () => {
         const response = await fetch(
-            'http://newsapi.org/v2/everything?q='+query+'&from=2020-09-09&to=2020-09-09&sortBy=popularity&apiKey=9538e0c8c6af4a7ab537573e4886d710');
+            'https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords='+query+'&apikey=9H1V4UQOAL9ECCDC'
+            );
         const data = await response.json();
         setRecipes(data.articles);
     };
